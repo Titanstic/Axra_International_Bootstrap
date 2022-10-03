@@ -1,0 +1,376 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+/* Start Header Section  */
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./img/header/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* start nav  */
+
+.navbar {
+    background-color: #3c3c3eb3;
+    z-index: 100;
+    transition: all .5s linear;
+}
+
+.navbar.scrolls {
+    background-color: #29292af0;
+    border-bottom: 1px groove rgb(171, 166, 166);
+    padding: 18px 0;
+}
+
+.navbuttons {
+    border: none;
+}
+
+.navbuttons:focus {
+    box-shadow: none;
+}
+
+.lines1,
+.lines2,
+.lines3 {
+    width: 25px;
+    height: 2px;
+    margin: 3px;
+    transition: all .3s linear;
+}
+
+.crossxs .lines1 {
+    transform: rotate(-45deg) translate(-3px, 4px);
+}
+
+.crossxs .lines2 {
+    opacity: 0;
+}
+
+.crossxs .lines3 {
+    transform: rotate(45deg) translate(-3px, -4px);
+}
+
+.menustyles li a {
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+
+.input-groups {
+    width: 250px;
+}
+
+.input-groups .form-control {
+    width: 85%;
+}
+
+.input-groups i {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* end nav  */
+
+
+/* start banner */
+
+.banners {
+    width: 80%;
+    height: 60vh;
+    background-image: url(./img/header/banner2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* end banner */
+
+
+/* End Header Section  */
+
+
+/* Start Service Section */
+
+.services {
+    background-image: url(./img/header/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.servic-img-groups {
+    width: 100%;
+    height: 150px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+}
+
+.servic-img-groups img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:768px) {
+    .servic-img-groups {
+        width: 60%;
+        height: 150px;
+    }
+}
+
+
+/* End Service Section  */
+
+
+/* Start ProductSection  */
+
+.products {
+    overflow: hidden;
+}
+
+.product-headers .titles {
+    font-size: 75px;
+}
+
+.product-headers .titles span {
+    color: transparent;
+    background: linear-gradient(90deg, #8093FF, #66FFE5);
+    -webkit-background-clip: text;
+}
+
+.product-bodys {
+    position: relative;
+}
+
+.main-bodys {
+    width: 60%;
+    height: 65vh;
+    background-color: rgb(54, 53, 53);
+    z-index: 3;
+}
+
+.main-bodys .subtitles {
+    border-left: 5px solid #fff;
+}
+
+.second-bodys {
+    position: absolute;
+    right: 10%;
+    top: 5%;
+}
+
+.third-bodys {
+    width: 35%;
+    margin-left: -50%;
+    margin-top: -5%;
+    z-index: 4;
+}
+
+.guide-btn {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    opacity: .8;
+    cursor: pointer;
+}
+
+.guide-btn:hover {
+    opacity: 1;
+}
+
+.learn-btn {
+    font-size: 15px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.learn-btn:hover {
+    color: #66FFE5;
+}
+
+@media (max-width: 768px) {
+    .product-headers .titles {
+        font-size: 30px !important;
+    }
+    .main-bodys {
+        width: 90%;
+        height: 35vh;
+        z-index: 3;
+    }
+    .guide-btn {
+        font-size: 15px;
+    }
+    .learn-btn {
+        font-size: 13px;
+    }
+}
+
+
+/* End ProductSection  */
+
+
+/* Start Partner Section  */
+
+.partner-containers .titles {
+    font-size: 62px;
+    background: linear-gradient(360deg, #535691, #E86A91);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.partner-containers .subtitles {
+    font-size: 30px;
+    margin: 40px 0;
+}
+
+.partner-containers button {
+    color: #fff;
+    font-size: 40px;
+    background-color: transparent;
+    border-color: #fff;
+    border-radius: 45px;
+    padding: 15px;
+    cursor: pointer;
+    opacity: .8;
+}
+
+.partner-containers button:hover {
+    opacity: 1;
+}
+
+@media (max-width:768px) {
+    .partner-containers .titles {
+        font-size: 30px;
+    }
+    .partner-containers .subtitles {
+        font-size: 14px;
+    }
+    .partner-containers button {
+        font-size: 20px;
+    }
+}
+
+
+/* End Partner Section  */
+
+
+/* Start Client Section  */
+
+.client-containers .titles {
+    font-size: 62px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.client-containers .titles span {
+    color: #77509E;
+}
+
+.client-img-containers img {
+    width: 15%;
+}
+
+@media (max-width:768px) {
+    .client-containers .titles {
+        font-size: 30px;
+    }
+}
+
+
+/* End Client Section  */
+
+
+/* Start Footer Section  */
+
+.footer-containers {
+    position: relative;
+}
+
+.footer-containers::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #804C9F, #525692, #7A48A1, #E06D8A);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+footer .titles {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+footer .footer-brands {
+    background: linear-gradient(90deg, #77509E, #E86688);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.footer-links {
+    color: #fff;
+    text-decoration: none;
+    transition: all .2s;
+}
+
+.footer-links:hover {
+    color: #77509E;
+    border-bottom: 1px solid #77509E;
+    letter-spacing: 1px;
+}
+
+.footer-link-groups {
+    width: 40%;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-link-groups a:first-child {
+    color: #99A9FF;
+}
+
+.footer-link-groups a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1.2px;
+}
+
+@media (max-width:768px) {
+    .footer-link-groups {
+        width: 80%;
+    }
+    .footer-link-groups a {
+        font-size: 11px;
+    }
+}
+
+
+/* End Footer Section  */
