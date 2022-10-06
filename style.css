@@ -171,7 +171,12 @@ header {
     z-index: 3;
 }
 
+.main-bodys img {
+    width: 250px;
+}
+
 .main-bodys .subtitles {
+    font-size: 2rem;
     border-left: 5px solid #fff;
 }
 
@@ -224,11 +229,17 @@ header {
         height: 35vh;
         z-index: 3;
     }
+    .main-bodys img {
+        width: 120px;
+    }
     .guide-btn {
         font-size: 15px;
     }
     .learn-btn {
         font-size: 13px;
+    }
+    .main-bodys .subtitles {
+        font-size: 1.5rem;
     }
 }
 
